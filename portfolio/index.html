@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sainik Bhaumick — Civil Engineer / BIM & Revit</title>
+<meta name="description" content="Sainik Bhaumick — Civil Engineer specializing in BIM, Revit, structural drafting and site execution. Portfolio of residential BIM and AutoCAD projects.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@500;600;700;800;900&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script>
+  /* Apply saved theme before paint to avoid a flash of the wrong mode */
+  (function () {
+    try {
+      var saved = localStorage.getItem("theme");
+      if (saved === "paper") document.documentElement.setAttribute("data-theme", "paper");
+    } catch (e) {}
+  })();
+</script>
+</head>
+<body>
+
+<!-- Grain overlay -->
+<div class="grain" aria-hidden="true"></div>
+
+<!-- Custom cursor (desktop only) -->
+<div class="cursor" id="cursor" aria-hidden="true">
+  <div class="cursor-dot"></div>
+  <div class="cursor-ring"></div>
+</div>
+
+<!-- Scroll progress rail (desktop) -->
+<div class="scroll-rail" aria-hidden="true">
+  <div class="scroll-rail-fill" id="scrollRailFill"></div>
+</div>
+
+<!-- ============================= -->
+<!-- DESKTOP / TOP NAVIGATION       -->
+<!-- ============================= -->
+<header class="topnav" id="topnav">
+  <a href="#index" class="topnav-mark">
+    <span class="mark-name">SAINIK</span><span class="mark-slash">/</span><span class="mark-num">01</span>
+  </a>
+
+  <nav class="topnav-links" aria-label="Primary">
+    <a href="#index" data-nav="index">INDEX</a>
+    <a href="#work" data-nav="work">WORK</a>
+    <a href="#experience" data-nav="experience">EXPERIENCE</a>
+    <a href="#bim" data-nav="bim">BIM</a>
+    <a href="#about" data-nav="about">ABOUT</a>
+    <a href="#contact" data-nav="contact">CONTACT</a>
+  </nav>
+
+  <div class="topnav-right">
+    <div class="topnav-status">
+      <span class="status-dot" aria-hidden="true"></span>
+      STATUS: AVAILABLE FOR BIM / STRUCTURAL ROLES
+    </div>
+
+    <button class="theme-toggle" id="themeToggle" type="button" aria-pressed="false" aria-label="Switch between blueprint and paper mode">
+      <span class="toggle-track"><span class="toggle-thumb"></span></span>
+      <span class="toggle-label" id="themeToggleLabel">BLUEPRINT</span>
+    </button>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- ============================= -->
+<!-- HERO                           -->
+<!-- ============================= -->
+<section class="hero" id="index">
+  <div class="hero-grid-bg" aria-hidden="true"></div>
+
+  <div class="hero-inner">
+    <div class="hero-left">
+      <p class="hero-eyebrow">CIVIL ENGINEER &nbsp;/&nbsp; BIM &amp; REVIT &nbsp;/&nbsp; KOLKATA, INDIA</p>
+
+      <h1 class="hero-headline">
+        <span class="line">BUILDING</span>
+        <span class="line">THE&nbsp;DIGITAL</span>
+        <span class="line hero-accent">STRUCTURE.</span>
+      </h1>
+
+      <p class="hero-sub">
+        Site execution, structural drafting and quantity estimation across
+        ₹9500+ Cr and ₹2000+ Cr infrastructure work — now coordinating
+        model-based BIM workflows in Autodesk Revit.
+      </p>
+
+      <div class="hero-cta-row">
+        <a href="#work" class="btn btn-primary magnetic">VIEW THE WORK</a>
+        <a href="#contact" class="btn btn-ghost magnetic">GET IN TOUCH</a>
+      </div>
+    </div>
+
+    <div class="hero-right">
+      <div class="portrait-frame">
+        <svg class="portrait-lines" viewBox="0 0 520 620" aria-hidden="true">
+          <line x1="0" y1="40" x2="520" y2="40" class="dim-line"/>
+          <line x1="40" y1="0" x2="40" y2="620" class="dim-line"/>
+          <line x1="0" y1="580" x2="520" y2="580" class="dim-line"/>
+          <line x1="480" y1="0" x2="480" y2="620" class="dim-line"/>
+          <text x="46" y="30" class="dim-text">EL. +0.000</text>
+          <text x="46" y="610" class="dim-text">GRID A — A'</text>
+          <text x="330" y="30" class="dim-text">SCALE 1:20</text>
+        </svg>
+        <img src="assets/profile.jpg" alt="Portrait of Sainik Bhaumick, Civil Engineer" class="portrait-img" width="520" height="620">
+        <span class="portrait-tag tag-1">STRUCTURAL / 01</span>
+        <span class="portrait-tag tag-2">BIM / 02</span>
+        <span class="portrait-tag tag-3">RCC / 03</span>
+        <span class="portrait-tag tag-4">DRAFTING / 04</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-stats">
+    <div class="stat">
+      <span class="stat-num" data-count="9500" data-prefix="₹" data-suffix="+ Cr">₹0+ Cr</span>
+      <span class="stat-label">Infrastructure Project</span>
+    </div>
+    <div class="stat">
+      <span class="stat-num" data-count="2000" data-prefix="₹" data-suffix="+ Cr">₹0+ Cr</span>
+      <span class="stat-label">Infrastructure Project</span>
+    </div>
+    <div class="stat">
+      <span class="stat-num" data-count="1000" data-prefix="~" data-suffix=" m³">~0 m³</span>
+      <span class="stat-label">RCC / PCC Estimated</span>
+    </div>
+    <div class="stat">
+      <span class="stat-num" data-count="10" data-prefix="~" data-suffix=" MT">~0 MT</span>
+      <span class="stat-label">BBS Prepared</span>
+    </div>
+  </div>
+
+  <a href="#scanner" class="scroll-cue" aria-label="Scroll down">
+    <span></span>
+  </a>
+</section>
+
+<!-- ============================= -->
+<!-- ENGINEERING SCANNER            -->
+<!-- ============================= -->
+<section class="scanner" id="scanner">
+  <p class="section-kicker">SYSTEM / 01</p>
+  <h2 class="section-title">Disciplines online.</h2>
+
+  <div class="scanner-grid">
+    <ul class="scanner-list" id="scannerList">
+      <li class="scanner-item is-active" data-key="bim" tabindex="0">
+        <span class="scanner-num">01</span>
+        <span class="scanner-name">BIM</span>
+        <p class="scanner-desc">Level-based Revit modelling — grids, parametric families and coordinated documentation.</p>
+      </li>
+      <li class="scanner-item" data-key="autocad" tabindex="0">
+        <span class="scanner-num">02</span>
+        <span class="scanner-name">AUTOCAD</span>
+        <p class="scanner-desc">2D structural and architectural drafting, from site plan through detailing sheets.</p>
+      </li>
+      <li class="scanner-item" data-key="rcc" tabindex="0">
+        <span class="scanner-num">03</span>
+        <span class="scanner-name">RCC</span>
+        <p class="scanner-desc">Reinforced concrete execution on site — pours, curing sequence and quality checks.</p>
+      </li>
+      <li class="scanner-item" data-key="bbs" tabindex="0">
+        <span class="scanner-num">04</span>
+        <span class="scanner-name">BBS</span>
+        <p class="scanner-desc">Bar bending schedules and reinforcement detailing referencing IS codes.</p>
+      </li>
+      <li class="scanner-item" data-key="quantity" tabindex="0">
+        <span class="scanner-num">05</span>
+        <span class="scanner-name">QUANTITY</span>
+        <p class="scanner-desc">Take-offs and material planning maintained in MS Excel against drawings.</p>
+      </li>
+      <li class="scanner-item" data-key="site" tabindex="0">
+        <span class="scanner-num">06</span>
+        <span class="scanner-name">SITE EXECUTION</span>
+        <p class="scanner-desc">Coordinating site teams against drawings and specification to minimise rework.</p>
+      </li>
+    </ul>
+
+    <div class="scanner-panel">
+      <div class="panel-head">
+        <span class="panel-dot"></span> SYSTEM STATUS
+      </div>
+      <ul class="panel-rows" id="panelRows">
+        <li><span>BIM</span><i></i><b>ACTIVE</b></li>
+        <li><span>AUTOCAD</span><i></i><b>ACTIVE</b></li>
+        <li><span>RCC</span><i></i><b>ACTIVE</b></li>
+        <li><span>BBS</span><i></i><b>ACTIVE</b></li>
+        <li><span>QUANTITY</span><i></i><b>ACTIVE</b></li>
+        <li><span>SITE EXEC.</span><i></i><b>ACTIVE</b></li>
+      </ul>
+      <svg class="panel-diagram" id="panelDiagram" viewBox="0 0 280 180" aria-hidden="true">
+        <rect x="10" y="10" width="260" height="160" class="diagram-frame"/>
+        <g id="diagramContent"></g>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- ============================= -->
+<!-- EXPERIENCE TIMELINE            -->
+<!-- ============================= -->
+<section class="experience" id="experience">
+  <p class="section-kicker">RECORD / 02</p>
+  <h2 class="section-title">Site to structure.</h2>
+
+  <div class="timeline" id="timeline">
+    <div class="timeline-track" aria-hidden="true">
+      <div class="timeline-track-fill" id="timelineFill"></div>
+    </div>
+
+    <div class="timeline-entry" data-year="2025">
+      <div class="entry-year">2025</div>
+      <div class="entry-body">
+        <p class="entry-role">ASSISTANT ENGINEER TRAINEE</p>
+        <p class="entry-org">S. K Samanta &amp; Co. (P) Ltd. — Jul 2025 – Apr 2026</p>
+        <p class="entry-project">Amrapali &amp; Magadh CHP Projects <span class="entry-value">₹2000+ Cr</span></p>
+        <ul class="entry-points">
+          <li>Estimated ~1000 m³ RCC/PCC and supervised ~100 m³ concreting</li>
+          <li>Prepared BBS (~10 MT steel), reducing wastage by 5%</li>
+          <li>Assisted in 8 RA bills with full approval</li>
+          <li>Coordinated with teams to maintain execution timelines</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="timeline-entry" data-year="2026">
+      <div class="entry-year">2026</div>
+      <div class="entry-body">
+        <p class="entry-role">ASSISTANT ENGINEER</p>
+        <p class="entry-org">Amara Raja Infra Pvt Ltd. — Apr 2026 – Present</p>
+        <p class="entry-project">Amara Raja Giga Corridor, Divitipalli <span class="entry-value">₹9500+ Cr</span></p>
+        <ul class="entry-points">
+          <li>Executing civil works as per drawings, specifications and safety standards</li>
+          <li>Interpreting AutoCAD and structural drawings for accurate execution</li>
+          <li>Performing quantity take-offs and material planning</li>
+          <li>Coordinating with site teams to ensure smooth execution and minimal rework</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================= -->
+<!-- PROJECTS / WORK                -->
+<!-- ============================= -->
+<section class="work" id="work">
+  <p class="section-kicker">ARCHIVE / 03</p>
+  <h2 class="section-title">Drawing sheets, not templates.</h2>
+
+  <!-- Desktop project cards -->
+  <div class="project-cards">
+
+    <article class="project-card" id="project-01">
+      <div class="project-media-slot">
+        <!-- G+2 project drawing sheet -->
+        <img src="assets/project-g2-site-plan.jpg" alt="Site plan and ground floor planning drawing for the G+2 residential building" loading="lazy" class="project-media">
+        <div class="project-media-tags">
+          <span>PROJECT / 001</span>
+          <span>DISCIPLINE / STRUCTURAL + CAD</span>
+          <span>SOFTWARE / AUTOCAD</span>
+          <span>TYPE / RESIDENTIAL</span>
+        </div>
+      </div>
+      <div class="project-info">
+        <h3>G+2 Residential Building</h3>
+        <p>Planning, design and drafting of a G+2 reinforced-concrete residential building — site planning, RCC detailing and a full AutoCAD sheet set. Academic / portfolio project.</p>
+        <button class="btn btn-ghost btn-case" data-modal="modal-01">VIEW CASE STUDY</button>
+      </div>
+    </article>
+
+    <article class="project-card" id="project-02">
+      <div class="project-media-slot">
+        <!-- BIM / Revit project drawing sheet -->
+        <img src="assets/project-bim-plan.jpg" alt="Ground floor plan generated from the Revit BIM model" loading="lazy" class="project-media">
+        <div class="project-media-tags">
+          <span>PROJECT / 002</span>
+          <span>DISCIPLINE / BIM</span>
+          <span>SOFTWARE / REVIT</span>
+          <span>ROLE / BIM MODELLER</span>
+        </div>
+      </div>
+      <div class="project-info">
+        <h3>BIM-Based Residential Building Modelling &amp; Documentation</h3>
+        <p>End-to-end BIM workflow for a multi-storied residential building in Autodesk Revit — architectural and structural coordination, with drawings and schedules extracted directly from the model.</p>
+        <button class="btn btn-ghost btn-case" data-modal="modal-02">VIEW CASE STUDY</button>
+      </div>
+    </article>
+  </div>
+
+  <!-- Mobile swipeable project cards -->
+  <div class="project-swipe" id="projectSwipe">
+    <div class="swipe-track" id="swipeTrack">
+      <div class="swipe-card">
+        <p class="swipe-label">PROJECT 01</p>
+        <h3>G+2 RESIDENTIAL</h3>
+        <img src="assets/project-g2-site-plan.jpg" alt="G+2 residential building site plan drawing" loading="lazy">
+        <div class="swipe-tags"><span>AUTOCAD</span><span>STRUCTURAL</span><span>RESIDENTIAL</span></div>
+        <button class="btn btn-ghost btn-case" data-modal="modal-01">VIEW CASE STUDY</button>
+      </div>
+      <div class="swipe-card">
+        <p class="swipe-label">PROJECT 02</p>
+        <h3>BIM MODELLING</h3>
+        <img src="assets/project-bim-plan.jpg" alt="BIM ground floor plan drawing extracted from Revit" loading="lazy">
+        <div class="swipe-tags"><span>REVIT</span><span>BIM</span><span>RESIDENTIAL</span></div>
+        <button class="btn btn-ghost btn-case" data-modal="modal-02">VIEW CASE STUDY</button>
+      </div>
+    </div>
+    <p class="swipe-cue">SWIPE →</p>
+  </div>
+</section>
+
+<!-- Project Modal 01 -->
+<div class="modal" id="modal-01" role="dialog" aria-modal="true" aria-labelledby="modal-01-title">
+  <div class="modal-backdrop" data-close></div>
+  <div class="modal-panel">
+    <button class="modal-close" data-close aria-label="Close case study">✕</button>
+    <p class="modal-kicker">PROJECT / 001 — STRUCTURAL + CAD</p>
+    <h3 id="modal-01-title">G+2 Residential Building</h3>
+
+    <div class="modal-grid">
+      <div class="modal-images">
+        <img src="assets/project-g2-full-sheet.jpg" alt="Full G+2 residential building AutoCAD drawing sheet" loading="lazy">
+        <div class="modal-thumbs">
+          <img src="assets/project-g2-floor-plan.jpg" alt="G+2 ground floor plan detail" loading="lazy">
+          <img src="assets/project-g2-elevation.jpg" alt="G+2 front elevation detail" loading="lazy">
+          <img src="assets/project-g2-section.jpg" alt="G+2 cross sectional elevation detail" loading="lazy">
+          <img src="assets/project-g2-details.jpg" alt="G+2 isolated column footing detail" loading="lazy">
+        </div>
+      </div>
+      <div class="modal-text">
+        <dl class="modal-facts">
+          <div><dt>OVERVIEW</dt><dd>A residential building planning and drafting project focused on architectural planning, structural layout, RCC components, foundation planning, staircase detailing and professional AutoCAD documentation.</dd></div>
+          <div><dt>OBJECTIVE</dt><dd>Plan a functional G+2 residential building and prepare architectural and structural drawings that reflect real drafting workflows used in consultancy and construction organisations.</dd></div>
+          <div><dt>SCOPE</dt><dd>Site planning, ground &amp; first floor planning, roof planning, front &amp; sectional elevation, staircase detailing, isolated column footing detailing, door &amp; window schedule.</dd></div>
+          <div><dt>DELIVERABLES</dt><dd>Site plan · Ground floor plan · First floor plan · Roof plan · Front elevation · Sectional elevation · Staircase detail · Isolated column footing · Door &amp; window schedule</dd></div>
+          <div><dt>TOOLS</dt><dd>AutoCAD, standard IS codes for conceptual reference</dd></div>
+          <div><dt>SKILLS DEMONSTRATED</dt><dd>Structural planning, RCC detailing, foundation planning, professional AutoCAD drafting and documentation</dd></div>
+        </dl>
+        <p class="modal-note">Academic / portfolio project — structural design calculations are limited to conceptual understanding and standard detailing, not professional structural approval.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Project Modal 02 -->
+<div class="modal" id="modal-02" role="dialog" aria-modal="true" aria-labelledby="modal-02-title">
+  <div class="modal-backdrop" data-close></div>
+  <div class="modal-panel">
+    <button class="modal-close" data-close aria-label="Close case study">✕</button>
+    <p class="modal-kicker">PROJECT / 002 — BIM / REVIT</p>
+    <h3 id="modal-02-title">BIM-Based Residential Building Modelling &amp; Documentation</h3>
+
+    <div class="modal-grid">
+      <div class="modal-images">
+        <img src="assets/project-bim-full-sheet.jpg" alt="Full BIM residential building drawing sheet generated from Revit" loading="lazy">
+        <div class="modal-thumbs">
+          <img src="assets/project-bim-plan.jpg" alt="BIM ground floor plan detail" loading="lazy">
+          <img src="assets/project-bim-elevation.jpg" alt="BIM front elevation detail" loading="lazy">
+          <img src="assets/project-bim-section.jpg" alt="BIM building section detail" loading="lazy">
+          <img src="assets/project-bim-roof.jpg" alt="BIM roof plan detail" loading="lazy">
+        </div>
+      </div>
+      <div class="modal-text">
+        <dl class="modal-facts">
+          <div><dt>OVERVIEW</dt><dd>An end-to-end BIM workflow demonstrating planning, modelling, coordination and documentation of a multi-storied residential building using Autodesk Revit.</dd></div>
+          <div><dt>OBJECTIVE</dt><dd>Create a single source-of-truth BIM model that integrates architectural planning, structural elements and documentation outputs, minimising drafting errors.</dd></div>
+          <div><dt>SCOPE</dt><dd>Floor plans, door/window/room layouts, staircase and circulation planning, roof modelling, RCC slabs/beams/columns, level coordination and full documentation extraction.</dd></div>
+          <div><dt>WORKFLOW</dt><dd>01 Project Setup → 02 Architectural Modelling → 03 Structural Modelling → 04 Model Coordination → 05 Drawing &amp; Schedule Extraction</dd></div>
+          <div><dt>DELIVERABLES</dt><dd>Ground floor plan · Upper floor plans · Roof plan · Front elevation · Building sections · Staircase section · Door &amp; window schedule</dd></div>
+          <div><dt>TOOLS</dt><dd>Autodesk Revit, parametric families, sheet sets &amp; annotations</dd></div>
+          <div><dt>SKILLS DEMONSTRATED</dt><dd>BIM modelling (architecture &amp; structure), Revit documentation workflow, drawing coordination and sheet management</dd></div>
+        </dl>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ============================= -->
+<!-- BIM WORKFLOW                   -->
+<!-- ============================= -->
+<section class="bim" id="bim">
+  <p class="section-kicker">PIPELINE / 04</p>
+  <h2 class="section-title">One model, five stages.</h2>
+
+  <div class="bim-pipeline" id="bimPipeline">
+    <svg class="pipeline-line" id="pipelineLine" viewBox="0 0 1000 40" preserveAspectRatio="none" aria-hidden="true">
+      <line x1="0" y1="20" x2="1000" y2="20" class="pipeline-path"/>
+      <line x1="0" y1="20" x2="1000" y2="20" class="pipeline-path-fill" id="pipelineFill"/>
+    </svg>
+
+    <div class="pipeline-stage" data-stage="1">
+      <span class="stage-num">01</span>
+      <h4>SETUP</h4>
+      <p>Levels, grids and project units defined. Naming conventions standardised.</p>
+    </div>
+    <div class="pipeline-stage" data-stage="2">
+      <span class="stage-num">02</span>
+      <h4>ARCHITECTURE</h4>
+      <p>Walls, floors, roofs, doors and windows modelled. Space planning optimised for ventilation and usability.</p>
+    </div>
+    <div class="pipeline-stage" data-stage="3">
+      <span class="stage-num">03</span>
+      <h4>STRUCTURE</h4>
+      <p>RCC slabs and columns placed with level coordination. Stair structural alignment checked through sections.</p>
+    </div>
+    <div class="pipeline-stage" data-stage="4">
+      <span class="stage-num">04</span>
+      <h4>COORDINATION</h4>
+      <p>Clash-free alignment between architectural and structural elements across floors.</p>
+    </div>
+    <div class="pipeline-stage" data-stage="5">
+      <span class="stage-num">05</span>
+      <h4>DOCUMENTATION</h4>
+      <p>Plans, elevations and sections auto-generated. Schedules extracted directly from the model.</p>
+    </div>
+  </div>
+
+  <!-- Mobile vertical modules -->
+  <div class="bim-modules" id="bimModules">
+    <button class="bim-module" data-module="1">
+      <span class="module-num">01</span><span class="module-name">PROJECT SETUP</span><span class="module-chevron">＋</span>
+    </button>
+    <div class="module-body">Levels, grids and project units defined. Naming conventions standardised.</div>
+
+    <button class="bim-module" data-module="2">
+      <span class="module-num">02</span><span class="module-name">ARCHITECTURAL</span><span class="module-chevron">＋</span>
+    </button>
+    <div class="module-body">Walls, floors, roofs, doors and windows modelled. Space planning optimised for ventilation and usability.</div>
+
+    <button class="bim-module" data-module="3">
+      <span class="module-num">03</span><span class="module-name">STRUCTURAL</span><span class="module-chevron">＋</span>
+    </button>
+    <div class="module-body">RCC slabs and columns placed with level coordination. Stair structural alignment checked through sections.</div>
+
+    <button class="bim-module" data-module="4">
+      <span class="module-num">04</span><span class="module-name">COORDINATION</span><span class="module-chevron">＋</span>
+    </button>
+    <div class="module-body">Clash-free alignment between architectural and structural elements across floors.</div>
+
+    <button class="bim-module" data-module="5">
+      <span class="module-num">05</span><span class="module-name">DOCUMENTATION</span><span class="module-chevron">＋</span>
+    </button>
+    <div class="module-body">Plans, elevations and sections auto-generated. Schedules extracted directly from the model.</div>
+  </div>
+</section>
+
+<!-- ============================= -->
+<!-- SKILLS MATRIX                  -->
+<!-- ============================= -->
+<section class="skills" id="skills">
+  <p class="section-kicker">MATRIX / 05</p>
+  <h2 class="section-title">Where the practice sits.</h2>
+
+  <ul class="matrix">
+    <li><span class="matrix-name">BIM (Revit)</span><span class="matrix-bar" style="--fill:70%"></span><span class="matrix-level">WORKING</span></li>
+    <li><span class="matrix-name">AutoCAD</span><span class="matrix-bar" style="--fill:90%"></span><span class="matrix-level">CORE</span></li>
+    <li><span class="matrix-name">RCC Execution</span><span class="matrix-bar" style="--fill:85%"></span><span class="matrix-level">EXPERIENCED</span></li>
+    <li><span class="matrix-name">BBS &amp; Detailing</span><span class="matrix-bar" style="--fill:80%"></span><span class="matrix-level">PRACTICAL</span></li>
+    <li><span class="matrix-name">Quantity Take-offs</span><span class="matrix-bar" style="--fill:80%"></span><span class="matrix-level">PRACTICAL</span></li>
+    <li><span class="matrix-name">Site Execution</span><span class="matrix-bar" style="--fill:80%"></span><span class="matrix-level">PRACTICAL</span></li>
+    <li><span class="matrix-name">STAAD.Pro</span><span class="matrix-bar" style="--fill:25%"></span><span class="matrix-level">BASIC</span></li>
+  </ul>
+</section>
+
+<!-- ============================= -->
+<!-- ABOUT                          -->
+<!-- ============================= -->
+<section class="about" id="about">
+  <p class="section-kicker">PROFILE / 06</p>
+  <h2 class="about-statement">I don't just read drawings.<br>I understand how they become structures.</h2>
+
+  <div class="about-body">
+    <p>
+      Sainik works across civil engineering's full span — from RCC execution
+      and structural drafting on active infrastructure sites, to quantity
+      estimation and bar bending schedules prepared against IS codes.
+      That site-level grounding is now extending into BIM: coordinating
+      architecture and structure inside a single Revit model rather than
+      across disconnected drawing sheets.
+    </p>
+    <p>
+      The direction is model-based coordination — fewer drafting errors,
+      faster documentation turnaround, and construction workflows that
+      hold together from foundation to finish.
+    </p>
+  </div>
+
+  <div class="about-tags">
+    <span>CIVIL ENGINEERING</span>
+    <span>SITE EXECUTION</span>
+    <span>STRUCTURAL DRAFTING</span>
+    <span>BIM / REVIT</span>
+    <span>QUANTITY ESTIMATION</span>
+  </div>
+</section>
+
+<!-- ============================= -->
+<!-- EDUCATION + CERTIFICATIONS     -->
+<!-- ============================= -->
+<section class="credentials" id="credentials">
+  <p class="section-kicker">RECORD / 07</p>
+  <h2 class="section-title">Documentation on file.</h2>
+
+  <div class="credentials-grid">
+    <div class="cred-column">
+      <h3 class="cred-heading">EDUCATION</h3>
+
+      <div class="cred-card">
+        <span class="cred-tag">EDU / 01</span>
+        <p class="cred-title">B.E in Civil Engineering</p>
+        <p class="cred-meta">Pursuing</p>
+      </div>
+
+      <div class="cred-card">
+        <span class="cred-tag">EDU / 02</span>
+        <p class="cred-title">Diploma in Civil Engineering</p>
+        <p class="cred-meta">Acharyya Prafulla Chandra Ray Polytechnic — 2022–2025<br>WBSCTE · CGPA 8.0</p>
+      </div>
+
+      <div class="cred-card">
+        <span class="cred-tag">EDU / 03</span>
+        <p class="cred-title">Secondary Education</p>
+        <p class="cred-meta">Behala Aryya Vidya Mandir — 2022<br>WBBSE · 75.14%</p>
+      </div>
+    </div>
+
+    <div class="cred-column">
+      <h3 class="cred-heading">CERTIFICATIONS</h3>
+
+      <div class="cred-card">
+        <span class="cred-tag">CERT / 01</span>
+        <p class="cred-title">BIM Fundamentals</p>
+        <p class="cred-meta">Skillbind Education</p>
+      </div>
+
+      <div class="cred-card">
+        <span class="cred-tag">CERT / 02</span>
+        <p class="cred-title">AutoCAD Professional</p>
+        <p class="cred-meta">Alison</p>
+      </div>
+
+      <div class="cred-card">
+        <span class="cred-tag">CERT / 03</span>
+        <p class="cred-title">Design &amp; Drafting Internship</p>
+        <p class="cred-meta">Genz Educatewing</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================= -->
+<!-- CONTACT                        -->
+<!-- ============================= -->
+<section class="contact" id="contact">
+  <div class="contact-inner">
+    <div class="contact-left">
+      <p class="section-kicker">CONTACT / 08</p>
+      <h2 class="contact-headline">
+        <span class="line">LET'S</span>
+        <span class="line">BUILD</span>
+        <span class="line">SOMETHING</span>
+        <span class="line hero-accent">STRUCTURAL.</span>
+      </h2>
+
+      <ul class="contact-list">
+        <li>
+          <span class="contact-label">EMAIL</span>
+          <a href="mailto:sainikbhaumick78@gmail.com">sainikbhaumick78@gmail.com</a>
+        </li>
+        <li>
+          <span class="contact-label">PHONE</span>
+          <a href="tel:+918697712736">+91 86977 12736</a>
+        </li>
+        <li>
+          <span class="contact-label">LINKEDIN</span>
+          <a href="https://www.linkedin.com/in/sainik-bhaumick/" target="_blank" rel="noopener">linkedin.com/in/sainik-bhaumick</a>
+        </li>
+        <li>
+          <span class="contact-label">PORTFOLIO</span>
+          <a href="https://sainikbhaumick78-lang.github.io/" target="_blank" rel="noopener">sainikbhaumick78-lang.github.io</a>
+        </li>
+      </ul>
+    </div>
+
+    <form class="contact-form" id="contactForm" novalidate>
+      <div class="form-row">
+        <label for="cf-name">NAME</label>
+        <input type="text" id="cf-name" name="name" required>
+        <span class="form-error" data-error-for="cf-name">Enter your name.</span>
+      </div>
+      <div class="form-row">
+        <label for="cf-email">EMAIL</label>
+        <input type="email" id="cf-email" name="email" required>
+        <span class="form-error" data-error-for="cf-email">Enter a valid email address.</span>
+      </div>
+      <div class="form-row">
+        <label for="cf-message">MESSAGE</label>
+        <textarea id="cf-message" name="message" rows="5" required></textarea>
+        <span class="form-error" data-error-for="cf-message">Enter a message.</span>
+      </div>
+      <button type="submit" class="btn btn-primary magnetic" aria-label="Send message via WhatsApp">SEND MESSAGE</button>
+      <p class="form-hint">Sends straight to WhatsApp — no server, no spam.</p>
+      <p class="form-note" id="formNote" role="status" aria-live="polite"></p>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<!-- ============================= -->
+<!-- FOOTER                         -->
+<!-- ============================= -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-mark">
+      <p>SAINIK BHAUMICK</p>
+      <p class="footer-role">CIVIL ENGINEER / BIM / STRUCTURAL</p>
+    </div>
+    <div class="footer-meta">
+      <span>KOLKATA, INDIA</span>
+      <span>© <span id="footerYear">2026</span></span>
+      <span>LAT 22.5726° N / LON 88.3639° E</span>
+    </div>
+  </div>
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <span>↑</span> TOP
+  </button>
+</footer>
+
+<!-- ============================= -->
+<!-- MOBILE BOTTOM NAVIGATION       -->
+<!-- ============================= -->
+<nav class="bottom-nav" aria-label="Mobile primary">
+  <a href="#index" data-nav="index">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 11l9-7 9 7"/><path d="M5 10v9h14v-9"/></svg>
+    <span>HOME</span>
+  </a>
+  <a href="#work" data-nav="work">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="7" width="18" height="13" rx="1"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg>
+    <span>WORK</span>
+  </a>
+  <a href="#bim" data-nav="bim">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2l9 5v10l-9 5-9-5V7z"/><path d="M3 7l9 5 9-5"/><path d="M12 12v9"/></svg>
+    <span>BIM</span>
+  </a>
+  <a href="#about" data-nav="about">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/></svg>
+    <span>ABOUT</span>
+  </a>
+  <a href="#contact" data-nav="contact">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 6l9 6 9-6"/><rect x="3" y="5" width="18" height="14" rx="1.5"/></svg>
+    <span>CONTACT</span>
+  </a>
+</nav>
+
+<script src="script.js"></script>
+</body>
+</html>
